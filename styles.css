@@ -9,6 +9,7 @@ body {
     background-image: url(https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1474&q=80);
     background-repeat: no-repeat;
     background-size: cover;
+    font-size: 120%;
 }
 
 .card {
@@ -28,10 +29,30 @@ body {
     justify-content: center;
 }
 
-button {
+button  {
     margin: 0.5rem;
     border-radius: 50%;
     border: none;
-    height: 2.5rem;
-    width: 2.5rem;
+    height: 46px;
+    width: 46px;
+    background: #7c7c7c2b;
+    color: white;
+    transition: 0.2s ease-in-out;
+}
+
+
+input.search-bar {
+    padding: 0.5rem 1em;
+    border: none;
+    border-radius: 18px;
+    outline: none;
+    background: #7c7c7c2b;
+    color: white;
+    font-family: inherit;
+    font-size: 120%;
+    width: calc(100% - 100px);
+}
+
+h1 .temp {
+    margin: 0;
 }
