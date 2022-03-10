@@ -22,8 +22,9 @@ let weather = {
         document.querySelector(".temp").innerText = temp + "°C";
         document.querySelector(".humidity").innerText = humidity + "%";
         document.querySelector(".wind").innerText = speed + " km/h";
+        document.querySelector(".description").innerText = description + " km/h";
     }
 };
 
-weather.fetchWeather("Cibolo");
+weather.fetchWeather("San Antonio");
 
