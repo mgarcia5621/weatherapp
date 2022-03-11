@@ -23,8 +23,20 @@ let weather = {
         document.querySelector(".humidity").innerText = humidity + "%";
         document.querySelector(".wind").innerText = speed + " km/h";
         document.querySelector(".description").innerText = description + " km/h";
+    },
+    search: function() {
+        this.fetchWeather(document.querySelector(".search-bar").value)
     }
 };
 
-weather.fetchWeather("San Antonio");
+document.querySelector(".search button")
+.addEventListener("click", function() {
+    weather.search();
+})
+
+document.querySelector(".search-bar").addEventListener("keyup", function (event) {
+    if (event == "Enter") {
+        weather.search();
+    }
+});
 
